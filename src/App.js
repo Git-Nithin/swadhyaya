@@ -3,63 +3,31 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 function App() {
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div className="App">
       {/* Navigation Bar */}
       <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
         <div className="container">
-          <button
-            className="navbar-brand text-success fw-bold"
-            onClick={() => scrollToSection("home")}
-          >
+          <a className="navbar-brand text-success fw-bold" href="#">
             Swadhyaya Yoga
-          </button>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto d-flex flex-row gap-4">
-              <li className="nav-item">
-                <button
-                  className="nav-link text-dark"
-                  onClick={() => scrollToSection("home")}
-                >
-                  Home
-                </button>
-              </li>
-              <li className="nav-item">
-                <button
-                  className="nav-link text-dark"
-                  onClick={() => scrollToSection("about")}
-                >
-                  About Us
-                </button>
-              </li>
-              <li className="nav-item">
-                <button
-                  className="nav-link text-dark"
-                  onClick={() => scrollToSection("contact")}
-                >
-                  Contact
-                </button>
-              </li>
-            </ul>
-          </div>
+          </a>
+          <ul className="navbar-nav ms-auto d-flex flex-row gap-4">
+            <li className="nav-item">
+              <a className="nav-link text-dark" href="#home">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-dark" href="#about">
+                About Us
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-dark" href="#contact">
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
 
@@ -74,11 +42,11 @@ function App() {
         <p className="lead text-muted mt-3">
           Discover the ancient practice of yoga for a healthier mind and body.
         </p>
-        {/* <img
-          // src="https://via.placeholder.com/500x300"
+        <img
+          src="https://via.placeholder.com/500x300"
           alt="Yoga Gif"
           className="mt-4 w-50 rounded shadow-lg"
-        /> */}
+        />
       </section>
 
       {/* Yoga Sections */}
@@ -87,11 +55,11 @@ function App() {
           {/* Prenatal Yoga Section */}
           <div className="col-md-6 mb-4">
             <div className="card shadow border-0">
-              {/* <img
-                // src="https://images.pexels.com/photos/3961334/pexels-photo-3961334.jpeg"
+              <img
+                src="https://images.pexels.com/photos/3961334/pexels-photo-3961334.jpeg"
                 className="card-img-top"
                 alt="Prenatal Yoga"
-              /> */}
+              />
               <div className="card-body">
                 <h2 className="card-title text-success">Prenatal Yoga</h2>
                 <p className="card-text text-muted">
@@ -121,11 +89,7 @@ function App() {
           {/* Ashtanga Yoga Section */}
           <div className="col-md-6 mb-4">
             <div className="card shadow border-0">
-              {/* <img
-                // src="https://images.pexels.com/photos/1557652/pexels-photo-1557652.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                className="card-img-top"
-                alt="Ashtanga Yoga"
-              /> */}
+              <img src="" className="card-img-top" alt="Ashtanga Yoga" />
               <div className="card-body">
                 <h2 className="card-title text-success">Ashtanga Yoga</h2>
                 <p className="card-text text-muted">
